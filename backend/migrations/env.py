@@ -21,6 +21,7 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
+# Base.metadata = toàn bộ thông tin về các bảng đã được định nghĩa trong models.py, bao gồm tên bảng, cột, kiểu dữ liệu, ràng buộc, v.v.
 
 target_metadata = Base.metadata
 

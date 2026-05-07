@@ -8,10 +8,11 @@ app = FastAPI()
 
 # Tao decorator cho app.get(“/”) 
 
-@app.get("/")
+@app.get("/diemtoanvan")
 
 # khi nguoi dung truy cap vao web root, goi ham sau
 
-def read_root():
-
-    return {"message": "Chao mung ban den voi Ebook2LateX!"}
+def get_student_scores(diemtoan: float, diemvan: float):
+    return {
+        "message": f"Điểm toán là {diemtoan} + {diemvan}"
+    }
